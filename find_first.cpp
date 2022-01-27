@@ -22,8 +22,8 @@ class Grammar{
             }
         }
         //validate the grammar
-        for(auto i : rules){
-            char key = i.first;
+        for(auto i : nonTerminals){
+            char key = i;
             if(rules[key].size() == 0){
                 cout<<"Incomplete grammar\n";
                 exit(0);
